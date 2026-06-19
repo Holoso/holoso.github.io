@@ -1,0 +1,13 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.holoso.artmate",
+      "sha256_cert_fingerprints": [
+        "DA:BF:8C:11:96:E1:A9:7A:26:16:AB:2F:09:DA:76:06:A0:C8:BB:6E:5B:AF:26:CA:39:B1:A9:D8:7C:39:2F:A0",
+        "70:79:26:1C:35:20:74:2F:31:0D:8D:A8:7F:76:EF:A9:4C:90:6B:C2:BD:D1:0E:2D:17:DA:8C:96:4D:F7:CD:CC"
+      ]
+    }
+  }
+]
