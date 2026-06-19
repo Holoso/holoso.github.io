@@ -1,0 +1,30 @@
+<!doctype html>
+<!--
+  Web fallback for visitors WITHOUT the app. Served (HTTP 200) for
+  /art-mate/challenges/ and /art-mate/challenges/?id=<id>. Scoped entirely under
+  /art-mate/ so it does NOT affect any other app on the shared holoso.github.io
+  domain (we deliberately do NOT use a domain-wide root 404.html).
+
+  Safe for deep links: when the app is installed, iOS/Android intercept the tap
+  and open the app before any HTTP request — this page is only ever reached by
+  users who do NOT have the app. See docs/deep-linking/README.md.
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Art Mate</title>
+  <script>
+    // Forward to the existing /art-mate/ landing page, preserving the challenge
+    // id so the landing page can highlight the shared challenge (optional).
+    var id = new URLSearchParams(location.search).get('id');
+    var dest = '/art-mate/' + (id ? '?challenge=' + encodeURIComponent(id) : '');
+    location.replace(dest);
+  </script>
+  <!-- No-JS fallback. -->
+  <meta http-equiv="refresh" content="0; url=/art-mate/">
+</head>
+<body>
+  <a href="/art-mate/">Continue to Art Mate</a>
+</body>
+</html>
