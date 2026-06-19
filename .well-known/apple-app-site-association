@@ -1,0 +1,15 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["T5H2V69G3A.com.holoso.artmate"],
+        "components": [
+          {
+            "/": "/art-mate/challenges*",
+            "comment": "Open the Challenges tab in the Art Mate app"
+          }
+        ]
+      }
+    ]
+  }
+}
